@@ -3,7 +3,6 @@ import { Toaster } from 'react-hot-toast';
 import { Outlet } from 'react-router-dom';
 
 import AppBar from '../AppBar';
-import Footer from '../Footer';
 import Skeleton from '../Skeleton';
 import { Container } from './Layout.styled';
 
@@ -16,7 +15,6 @@ const Layout = () => {
           <Outlet />
         </Suspense>
       </main>
-      <Footer />
       <Toaster
         position="buttom-left"
         toastOptions={{
